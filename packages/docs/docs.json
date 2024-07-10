@@ -1,5 +1,5 @@
 {
-  "timestamp": "2024-07-10T10:16:33",
+  "timestamp": "2024-07-10T14:13:08",
   "compiler": {
     "name": "@stencil/core",
     "version": "4.10.0",
@@ -14617,7 +14617,7 @@
           "mutable": false,
           "attr": "connector-width",
           "reflectToAttr": false,
-          "docs": "The length of the connnector between each step in pixels. Minimum length is 100px.",
+          "docs": "The length of the connector between each step in pixels. Minimum length is 100px.",
           "docsTags": [],
           "default": "100",
           "values": [
