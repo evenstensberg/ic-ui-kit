@@ -17,7 +17,7 @@ const menuOptions = [
   { label: "Flat White", value: "flatwhite" },
   {
     label: "Cappuccino",
-    value: "cappucino",
+    value: "cappuccino",
     description: "with chocolate is best!",
   },
   { label: "Americano", value: "americano" },
