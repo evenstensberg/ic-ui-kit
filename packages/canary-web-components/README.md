@@ -2,6 +2,7 @@
 
 [![OGL V3 License](https://img.shields.io/badge/license-OGLv3-blue.svg)](https://github.com/mi6/ic-design-system/tree/main/LICENSE)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mi6/ic-design-system/tree/main/LICENSE)
+[![npm][https://img.shields.io/npm/v/@ukic/canary-web-components.svg]][https://npmjs.com/package/@ukic/canary-web-components]
 
 The [Intelligence Community Design System](https://design.sis.gov.uk) helps the United Kingdom's Intelligence Community (MI6, GCHQ, MI5, and partners) to quickly build powerful capabilities that are accessible and easy to use.
 
@@ -179,3 +180,6 @@ The current workaround is to initially build and test the canary component withi
 Unless stated otherwise, the codebase is released under the [MIT License](https://opensource.org/licenses/MIT). This covers both the codebase and any sample code in the documentation. The documentation is and available under the terms of the [Open Government License v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
 
 © Crown copyright 2022
+
+[npm]: https://img.shields.io/npm/v/@ukic/canary-web-components.svg
+[npm-url]: https://npmjs.com/package/@ukic/canary-web-components
