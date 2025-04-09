@@ -157,7 +157,8 @@
       "codemod",
       "nargs",
       "testid",
-      "shadowrootmode"
+      "shadowrootmode",
+      "reactjs"
     ],
     "dictionaries": ["npm", "softwareTerms", "node", "html", "css", "bash", "en-gb", "misc", "la"],
     "ignorePaths": [
