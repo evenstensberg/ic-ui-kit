@@ -218,6 +218,10 @@ export namespace Components {
          */
         "announced": boolean;
         /**
+          * The text in the dismiss button tooltip. Makes the user aware of the action resulting from clicking the 'Dismiss' button.
+         */
+        "dismissLabel"?: string | undefined;
+        /**
           * If `true`, the alert will have a close icon at the end to dismiss it.
          */
         "dismissible": boolean;
@@ -1062,7 +1066,7 @@ export namespace Components {
         /**
           * The validation message to display.
          */
-        "message": string;
+        "message"?: string;
         /**
           * The status of the validation - e.g. 'error' | 'warning' | 'success'.
          */
@@ -1209,7 +1213,7 @@ export namespace Components {
          */
         "theme": IcThemeMode;
         /**
-          * The type of indicator, either linear or circular.
+          * The type of indicator, either linear or circular. When size is set to 'icon' the type will be set to circular.
          */
         "type": IcLoadingTypes;
     }
@@ -2046,6 +2050,10 @@ export namespace Components {
     }
     interface IcSkeleton {
         /**
+          * Height of the skeleton. Accepts any valid CSS length (e.g. "24px", "2rem", "100%").
+         */
+        "height"?: string;
+        /**
           * Sets the theme color to the dark or light theme color. "inherit" will set the color based on the system settings or ic-theme component.
          */
         "theme"?: IcThemeMode;
@@ -2053,6 +2061,10 @@ export namespace Components {
           * The variant of the skeleton that will be displayed.
          */
         "variant"?: IcSkeletonVariants;
+        /**
+          * Width of the skeleton. Accepts any valid CSS length (e.g. "24px", "2rem", "100%").
+         */
+        "width"?: string;
     }
     interface IcSkipLink {
         /**
@@ -3890,6 +3902,10 @@ declare namespace LocalJSX {
          */
         "announced"?: boolean;
         /**
+          * The text in the dismiss button tooltip. Makes the user aware of the action resulting from clicking the 'Dismiss' button.
+         */
+        "dismissLabel"?: string | undefined;
+        /**
           * If `true`, the alert will have a close icon at the end to dismiss it.
          */
         "dismissible"?: boolean;
@@ -4750,7 +4766,7 @@ declare namespace LocalJSX {
         /**
           * The validation message to display.
          */
-        "message": string;
+        "message"?: string;
         /**
           * The status of the validation - e.g. 'error' | 'warning' | 'success'.
          */
@@ -4893,7 +4909,7 @@ declare namespace LocalJSX {
          */
         "theme"?: IcThemeMode;
         /**
-          * The type of indicator, either linear or circular.
+          * The type of indicator, either linear or circular. When size is set to 'icon' the type will be set to circular.
          */
         "type"?: IcLoadingTypes;
     }
@@ -5811,6 +5827,10 @@ declare namespace LocalJSX {
     }
     interface IcSkeleton {
         /**
+          * Height of the skeleton. Accepts any valid CSS length (e.g. "24px", "2rem", "100%").
+         */
+        "height"?: string;
+        /**
           * Sets the theme color to the dark or light theme color. "inherit" will set the color based on the system settings or ic-theme component.
          */
         "theme"?: IcThemeMode;
@@ -5818,6 +5838,10 @@ declare namespace LocalJSX {
           * The variant of the skeleton that will be displayed.
          */
         "variant"?: IcSkeletonVariants;
+        /**
+          * Width of the skeleton. Accepts any valid CSS length (e.g. "24px", "2rem", "100%").
+         */
+        "width"?: string;
     }
     interface IcSkipLink {
         /**

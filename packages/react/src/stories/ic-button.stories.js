@@ -81,15 +81,15 @@ const PopoverDropdown = () => {
 const IconBtnGroup = (iconProps) => {
   return (
     <>
-      <h1>{iconProps.title}</h1>
+      <h1 style={{ color: "var(--ic-typography-color)" }}>{iconProps.title}</h1>
       <div
         style={{
-          backgroundColor: iconProps.theme === "light" ? "var(--ic-color-page-background-dark)" : "var(--ic-color-page-background-light)",
+          backgroundColor: iconProps.theme === "dark" ? "var(--ic-color-page-background-dark)" : "var(--ic-color-page-background-light)",
           display: "flex",
           gap: "0.5rem",
           marginBottom: "1rem",
           width: "fit-content",
-          padding: iconProps.theme === "light" ? "6px 10px" : "none",
+          padding: iconProps.theme === "dark" ? "6px 10px" : "none",
         }}
       >
         <IcButton
@@ -1429,6 +1429,9 @@ export const IconVariants = {
     IconBtnGroup(iconProps.iconDefault),
     IconBtnGroup(iconProps.iconSmall),
     IconBtnGroup(iconProps.iconLarge),
+    IconBtnGroup(iconProps.iconLoadingSmall),
+    IconBtnGroup(iconProps.iconLoading),
+    IconBtnGroup(iconProps.iconLoadingLarge),
     IconBtnGroup(iconProps.iconDisabled),
     IconBtnGroup(iconProps.iconLight),
     IconBtnGroup(iconProps.iconDark),
@@ -1663,6 +1666,86 @@ export const PlaygroundWithIcon = {
   },
 
   name: "Playground with icon",
+};
+
+export const PlaygroundIconOnly = {
+  render: (args) => (
+    <IcButton
+      disableTooltip={args.disableTooltip}
+      disabled={args.disabled}
+      fullWidth={args.fullWidth}
+      href={args.href}
+      loading={args.loading}
+      monochrome={args.monochrome}
+      size={args.size}
+      theme={args.theme}
+      tooltipPlacement={args.tooltipPlacement}
+      transparentBackground={args.transparentBackground}
+      variant={args.variant}
+      aria-label="refresh"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#000000"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" />
+      </svg>
+    </IcButton>
+  ),
+
+  args: {
+    disableTooltip: false,
+    disabled: false,
+    fullWidth: false,
+    href: "",
+    loading: false,
+    monochrome: false,
+    size: "medium",
+    theme: "inherit",
+    tooltipPlacement: "bottom",
+    transparentBackground: false,
+    variant: "icon-primary",
+  },
+
+  argTypes: {
+    variant: {
+      options: ["icon-primary", "icon-secondary", "icon-tertiary", "icon-destructive"],
+
+      control: {
+        type: "select",
+      },
+    },
+
+    size: {
+      options: ["medium", "large", "small"],
+
+      control: {
+        type: "inline-radio",
+      },
+    },
+
+    theme: {
+      options: ["inherit", "dark", "light"],
+
+      control: {
+        type: "inline-radio",
+      },
+    },
+
+    tooltipPlacement: {
+      options: ["top", "right", "bottom", "left"],
+
+      control: {
+        type: "inline-radio",
+      },
+    },
+  },
+
+  name: "Playground - icon only",
 };
 
 export const FileUpload_ = {

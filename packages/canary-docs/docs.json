@@ -5538,7 +5538,7 @@
           },
           "mutable": false,
           "reflectToAttr": false,
-          "docs": "An array of times that will be disabled in the time input. The times can be in any format supported as `timeFormat`, in ISO 8601 time string format (`HH:MM:SS`) or as a JavaScript `Date` object.",
+          "docs": "An array of objects with start and end values that will be disabled in the time input. The times can be in any format supported as `timeFormat`, in ISO 8601 time string format (`HH:MM:SS`) or as a JavaScript `Date` object.",
           "docsTags": [],
           "default": "[]",
           "values": [
@@ -6381,7 +6381,7 @@
           },
           "mutable": false,
           "reflectToAttr": false,
-          "docs": "An array of times that will be disabled in the time selector. The times can be in any format supported as `timeFormat`, in ISO 8601 time string format (`HH:MM:SS`) or as a JavaScript `Date` object.",
+          "docs": "An array of objects with start and end values that will be disabled in the time selector. The times can be in any format supported as `timeFormat`, in ISO 8601 time string format (`HH:MM:SS`) or as a JavaScript `Date` object.",
           "docsTags": [],
           "default": "[]",
           "values": [
@@ -6540,41 +6540,6 @@
           "setter": false
         },
         {
-          "name": "timeFormat",
-          "type": "\"HH:MM\" | \"HH:MM:SS\"",
-          "complexType": {
-            "original": "IcTimeFormatSelector",
-            "resolved": "\"HH:MM\" | \"HH:MM:SS\"",
-            "references": {
-              "IcTimeFormatSelector": {
-                "location": "import",
-                "path": "../../utils/types",
-                "id": "src/utils/types.ts::IcTimeFormatSelector"
-              }
-            }
-          },
-          "mutable": false,
-          "attr": "time-format",
-          "reflectToAttr": false,
-          "docs": "The format in which the time will be displayed.",
-          "docsTags": [],
-          "default": "this.DEFAULT_TIME_FORMAT",
-          "values": [
-            {
-              "value": "HH:MM",
-              "type": "string"
-            },
-            {
-              "value": "HH:MM:SS",
-              "type": "string"
-            }
-          ],
-          "optional": false,
-          "required": false,
-          "getter": false,
-          "setter": false
-        },
-        {
           "name": "timePeriod",
           "type": "\"12\" | \"24\"",
           "complexType": {
@@ -6646,11 +6611,11 @@
       "events": [
         {
           "event": "icChange",
-          "detail": "{ value: Date | null; timeString: string | null; timeObject: { hour: string | null; minute: string | null; second: string | null; period?: IcTimePeriods | undefined; }; }",
+          "detail": "{ value: Date | null; timeString: string | null; timeObject: { hour: string | null; minute: string | null; period?: IcTimePeriods | undefined; }; }",
           "bubbles": true,
           "complexType": {
-            "original": "{\n    value: Date | null;\n    timeString: string | null;\n    timeObject: {\n      hour: string | null;\n      minute: string | null;\n      second: string | null;\n      period?: IcTimePeriods;\n    };\n  }",
-            "resolved": "{ value: Date | null; timeString: string | null; timeObject: { hour: string | null; minute: string | null; second: string | null; period?: IcTimePeriods | undefined; }; }",
+            "original": "{\n    value: Date | null;\n    timeString: string | null;\n    timeObject: {\n      hour: string | null;\n      minute: string | null;\n      period?: IcTimePeriods;\n    };\n  }",
+            "resolved": "{ value: Date | null; timeString: string | null; timeObject: { hour: string | null; minute: string | null; period?: IcTimePeriods | undefined; }; }",
             "references": {
               "Date": {
                 "location": "global",
@@ -7533,17 +7498,12 @@
       "path": "src/utils/types.ts"
     },
     "src/utils/types.ts::IcDisableTimeSelection": {
-      "declaration": "export type IcDisableTimeSelection =\n  | string\n  | Date\n  | { start: string | Date; end: string | Date };",
+      "declaration": "{\n  start: string | Date;\n  end: string | Date;\n}",
       "docstring": "",
       "path": "src/utils/types.ts"
     },
     "src/utils/types.ts::IcTimeFormat": {
       "declaration": "export type IcTimeFormat = \"HH:MM\" | \"HH:MM:SS\" | \"HH:MM:SS.SSS\";",
-      "docstring": "",
-      "path": "src/utils/types.ts"
-    },
-    "src/utils/types.ts::IcTimeFormatSelector": {
-      "declaration": "export type IcTimeFormatSelector = \"HH:MM\" | \"HH:MM:SS\";",
       "docstring": "",
       "path": "src/utils/types.ts"
     },
