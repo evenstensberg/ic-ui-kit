@@ -1,0 +1,15 @@
+name: Poll for new audit fixes
+on:
+  schedule:
+    # Runs at 00:00 on Sundays
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+jobs:
+  monthly-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Update audits that fails once a month
+        run: echo "Implement me"
