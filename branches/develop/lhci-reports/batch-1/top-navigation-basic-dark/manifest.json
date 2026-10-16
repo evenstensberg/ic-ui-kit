@@ -2,8 +2,8 @@
   {
     "url": "http://localhost:3001/#/top-navigation-basic?theme=dark",
     "isRepresentativeRun": true,
-    "htmlPath": "/home/runner/work/ic-ui-kit/ic-ui-kit/packages/react/lhci-reports/top-navigation-basic-dark/localhost--2026_10_15_06_42_55.report.html",
-    "jsonPath": "/home/runner/work/ic-ui-kit/ic-ui-kit/packages/react/lhci-reports/top-navigation-basic-dark/localhost--2026_10_15_06_42_55.report.json",
+    "htmlPath": "/home/runner/work/ic-ui-kit/ic-ui-kit/packages/react/lhci-reports/top-navigation-basic-dark/localhost--2026_10_16_06_36_14.report.html",
+    "jsonPath": "/home/runner/work/ic-ui-kit/ic-ui-kit/packages/react/lhci-reports/top-navigation-basic-dark/localhost--2026_10_16_06_36_14.report.json",
     "summary": {
       "performance": 1,
       "accessibility": 1,
