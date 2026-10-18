@@ -2,8 +2,8 @@
   {
     "url": "http://localhost:3001/#/switch?theme=dark",
     "isRepresentativeRun": true,
-    "htmlPath": "/home/runner/work/ic-ui-kit/ic-ui-kit/packages/react/lhci-reports/switch-dark/localhost--2026_10_17_06_24_52.report.html",
-    "jsonPath": "/home/runner/work/ic-ui-kit/ic-ui-kit/packages/react/lhci-reports/switch-dark/localhost--2026_10_17_06_24_52.report.json",
+    "htmlPath": "/home/runner/work/ic-ui-kit/ic-ui-kit/packages/react/lhci-reports/switch-dark/localhost--2026_10_18_06_48_05.report.html",
+    "jsonPath": "/home/runner/work/ic-ui-kit/ic-ui-kit/packages/react/lhci-reports/switch-dark/localhost--2026_10_18_06_48_05.report.json",
     "summary": {
       "performance": 1,
       "accessibility": 1,
